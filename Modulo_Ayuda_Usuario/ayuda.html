@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <h2>Menú</h2>
+        <ul>
+            <li><a onclick="showSection('menu')">Acerca De Nosotros</a></li>
+            <li><a onclick="showSection('inicio')">Inicio de Sesión</a></li>
+            <li><a onclick="showSection('productos')">Productos</a></li>
+            <li><a onclick="showSection('carrito')">Carrito</a></li>
+            <li><a onclick="showSection('facturacion')">Facturación</a></li>
+            <li><a onclick="showSection('pedidos')">Pedidos de clientes</a></li>
+            <li><a onclick="showSection('estado')">Estado del pedido</a></li>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <footer>@Real_Market UNICAH 2024</footer>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="menu" class="active">
+            <h2>Real_Market 2024</h2>
+            <img src="imagenes_usuario/logo.jpg"  class="section-image">
+            <p>Real_Market es un programa software diseñado para optimizar la gestión de supermercados. Somos una empresa dedicada a ofrecer el mejor
+                servicio de compras que un supermercado puede tener. El sistema proporciona facilidades para realizar compras desde la comodidad de tu
+            </p>
+        </section>
+
+        <section id="inicio">
+            <h2>Inicio de Sesión</h2>
+            <img src="imagenes_usuario/modulo_inicio.jpg"  class="section-image">
+            <img src="imagenes_usuario/modulo_registro.jpg"  class="section-image1">
+            <ul>
+                <li><strong>Ingresar.</strong> Ingresa tu Usuario y Contraseña. Sino tienes usuario crealo desde el link en la parte inferior
+                para registrarte.</li>
+                <li><strong>Registro.</strong> Ingresa un nombre de Usuario, Contraseña, Correo, Nombre, Apellido, Dirección y Número de Télefono.</li>
+            </ul>
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <img src="imagenes_usuario/modulo_cliente.jpg"  class="section-image">
+            <ul>
+                <li><strong>Ingresar a Productos.</strong> Haz click en el botón "Productos" 
+                    en la parte izquierda.</li>
+                <li><strong>Agregar un Producto.</strong> Haz click en el botón en la parte
+                    de abajo del producto que contiene el precio para poder abrir tu Carrito y agregar el producto que desees.</li>
+                <li><strong>Salir.</strong> Haz click en el botón "Salir" en la parte izquierda.</li>
+            </ul>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito</h2>
+            <img src="imagenes_usuario/modulo_carrito.jpg"  class="section-image">
+            <ul>
+                <li><strong>Ingresar a Carrito.</strong> Haz clic en el botón "Carrito" en la parte izquierda.</li>
+                <li><strong>Eliminar Producto del Carrito.</strong> Haz clic en el botón que representa un basurero rojo al lado derecho del producto.
+                     Luego aparecerá una ventana emergente para asegurarse que quieras eliminar, responde con un "Si" o con un "No".</li>
+                     <li><strong>Salir.</strong> Haz click en el botón "Salir" en la parte izquierda.</li>
+            </ul>
+        </section>
+
+        <section id="facturacion">
+            <h2>Facturación</h2>
+            <img src="imagenes_usuario/modulo_facturacion.jpg"  class="section-image">
+
+            <ul>
+                <li><strong>Ingresar a Facturación.</strong> Haz click en el botón "Facturación" en la parte izquierda.</li>
+                <li><strong>Pagar con tarjeta.</strong> Haz click en el botón de "Tarjeta", luego llena los datos de tu tarjeta en la ventana emergente que aparecerá y haz click en aceptar.</li>
+                <li><strong>Pagar con efectivo.</strong> Haz click en el botón que dice "Efectivo", luego llena la caja de texto con un valor mayor o igual que tu total.</li>
+                <li><strong>Seleccionar colonia.</strong> Haz click en el menú desplegable al lado del texto "Colonia a entregar", luego elige tu colonia.</li>
+                <li><strong>Confirmar Pagar.</strong> Haz click en el botón que dice "Pagar", luego de confirmar tu método de pago.</li>
+                <li><strong>Salir.</strong> Haz click en el botón "Salir" en la parte izquierda.</li>
+            </ul>
+        </section>
+
+        <section id="pedidos">
+            <h2>Pedidos de Clientes</h2>
+            <img src="imagenes_usuario/modulo_pedidoscliente.jpg"  class="section-image">
+            <ul>
+                <li><strong>Ingresar a Pedidos.</strong> Haz click en el botón "Pedidos" en la parte izquierda.</li>
+                <li><strong>Ver Información del Pedido.</strong>Haz click en el botón que asemeja un ojo a la izquierda.</li>
+                <li><strong>Salir.</strong> Haz click en el botón "Salir" en la parte izquierda.</li>
+            </ul>
+        </section>
+
+        <section id="estado">
+            <h2>Estado del Pedido</h2>
+            <img src="imagenes_usuario/modulo_estadopedido.jpg"  class="section-image">
+            <ul>
+                <li><strong>Información.</strong> Desde esta pantalla podrás ver el estado de los pedidos que haz hecho, ver 
+                    el nombre del repartidor y en cuanto será entregado.</li>
+                <li><strong>Salir.</strong> Haz click en el botón "Salir" en la parte izquierda.</li>
+            </ul>
+        </section>
+
+    </main>
+    <script>
+        function showSection(sectionId) 
+        {
+            document.querySelectorAll('section').forEach(section => {section.classList.remove('active');});
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
